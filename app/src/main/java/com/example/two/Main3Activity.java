@@ -32,8 +32,7 @@ public class Main3Activity extends AppCompatActivity {
         fa1 = FirebaseAuth.getInstance();
         fbu = fa1.getCurrentUser();
         phoneNumber = fbu.getPhoneNumber();
-        dr1 = FirebaseDatabase.getInstance
-                ().getReference().child("Userinfo");
+        dr1 = FirebaseDatabase.getInstance().getReference().child("Userinfo");
         lv = findViewById(R.id.lv);
         btn1 = findViewById(R.id.btn1);
 

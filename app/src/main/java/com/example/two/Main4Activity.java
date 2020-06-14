@@ -54,7 +54,7 @@ public class Main4Activity extends AppCompatActivity {
         imageView = findViewById( R.id.button );
         databaseReference1 = FirebaseDatabase.getInstance().getReference().child( "Userinfo" ).child( s5 );
         showImage();
-        imageView.setOnClickListener( new View.OnClickListener() {
+        imageView.setOnClickListener(  new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gatllryIntent = new Intent();

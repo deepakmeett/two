@@ -40,8 +40,7 @@ public class Main2Activity extends AppCompatActivity {
         fa = FirebaseAuth.getInstance();
         final FirebaseUser fu = fa.getCurrentUser();
         String phoneNumber = fu.getPhoneNumber();
-        dr = FirebaseDatabase.getInstance().getReference
-                ().child("Userinfo").child(phoneNumber);
+        dr = FirebaseDatabase.getInstance().getReference().child("Userinfo").child(phoneNumber);
 
         ConstraintLayout constraintLayout = findViewById(R.id.lay);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
